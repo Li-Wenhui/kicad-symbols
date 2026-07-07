@@ -177,7 +177,7 @@ class LibPacker:
 
         packed_lib_path = self.output_folder / libname
 
-        with open(packed_lib_path, "w") as f:
+        with open(packed_lib_path, "w", encoding='utf-8') as f:
             f.writelines(header)
 
             for sym in syms:
